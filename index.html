@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<script>
+    currentPage = 0;
+</script>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="description"
+        content="Genesis Craft-方块世界 我的世界Java版公益原版生存服务器官网" />
+    <meta
+        name="keywords"
+        content="我的世界,服务器,mc,server,minecraft,server,Genecraft,genesis craft,survival,the block world,
+    1.16.5,java,pc,基岩,互通,生存,建筑,红石,生电,公益,服,官网,联机,方块世界" />
+    <meta name="robots" content="all" />
+    <meta name="author" content="QuarkPixel" />
+    <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>
+        方块世界 - Genesis Craft
+        我的世界服务器|原版生存|服务器官网
+    </title>
+    <link
+        rel="shortcut icon"
+        href="https://s2.loli.net/2022/07/18/bPEBTUv7p2L4ihg.png" />
+    <link rel="stylesheet" href="preset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" />
+    <link
+        rel="apple-touch-icon"
+        href="https://s2.loli.net/2022/07/18/bPEBTUv7p2L4ihg.png" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="page_welcome">
+        <div class="blackCloth"></div>
+        <img
+            style="image-rendering: pixelated"
+            width="920px"
+            alt="Genesis Craft"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAAAoCAMAAABEgm29AAAAAXNSR0IArs4c6QAAAAZQTFRFAAAA////pdmf3QAAAAJ0Uk5TAP9bkSK1AAABNklEQVRIie2WSxKEIAxEk/tfespylO5Oq4C6M5uBfB4hQYaIRXKVZRDzki46UR6G79AX4Ii8B/frJYwfZyfMmjLRLingXsEjSclRUSK42ydGgIPSwJuTgatx37B6BMHx1MgiiTPIANjFIy08Kf4g1w2O2+ZkpDtYvJNCoBGiacdltK1pOmjhLjnNWBzrYfdlWU1UBrThzkznPJyvNrc3VmIZ5Sy1ImFHyGgdSwe0jrQxOMeaB9m5Z9gBrhiH1y+Q0iC1sD/5pF/gvPV4TqA7DmdLYozdlVX7jkbYbXzl2+NWs3kDrpcK/mWEv0j6r47qhuFEehIe5v9/jG3gRgeFweks3CvuNVThUoVbcA3WEk+dc3pa6LOqPh4G4QcPEFUMw8u9lXW5vyLldxAPs7LwJJzd00zm4D9LRgQvftwHLgAAAABJRU5ErkJggg">
+        <div class="page_welcome_supplement" lang="en">
+            THE<br />BLOCK<br />WORLD<br /><i
+                class="txtBig"
+                lang="zh-cn">方块世界|</i>
+        </div>
+        <div class="welPage_divider_father">
+            <div style="width: 200vw"></div>
+        </div>
+    </div>
+    <div class="propaganda">
+        <div class="box bRight">
+            <i class="slogan">创世纪 但细腻</i>
+            <p class="wordsExplain box txtSmall"><i>[Genesis]</i>&emsp;n. 开端;&thinsp;创始;&thinsp;起源</p>
+            <p class="explain">一群单纯热爱的人组织起的服务器。<br>我们没有雄厚的资金，绚烂的技术，但是我们有追求细致的心。<br>
+                如果你细心的话，你会发现我们服务器的许多小细节。<br>祝你玩的愉快~
+        </div>
+        <div class="box" style="text-align: end;">
+            <span class="slogan"><i style="display: block;font-size: 24pt"><i
+                        class="fa-regular fa-calendar-days fa-sm"></i> 19年至今<br>
+                    我们共渡过了</i><span id="time_establishment"></span><i style="font-size: smaller"> 个日日夜夜</i>
+            </span>
+            <p class="explain">成立于2019年1月4日，<br>早已从几个朋友间的打打闹闹变成了百人大家庭。<br>我们坚信你的加入定会为我们增添一份不一样的色彩。
+        </div>
+        <div class="box bRight">
+            <span class="slogan"><i
+                    style="display: block;font-size: 36pt">建筑&thinsp;or&thinsp;生电</i>不必纠结</span>
+            <p class="explain">服内的&thinsp;建筑党&thinsp;&&thinsp;生电党&thinsp;没有哪一方是弱势的。<br>不管你是什么类型的玩家，在我们这定有一席之地。</p>
+        </div>
+        <div class="box" style="text-align: end">
+            <span class="slogan">人工审核白名单<br>没有熊孩太习惯</span>
+            <p class="explain">我们有着精心设计的<a class="href"
+                    href="https://docs.qq.com/form/page/DSmlUQ1hWU2R3RFpE"
+                    target="_blank">白名单申请问卷</a>，<br>可以有效的杜绝大部分「不友好玩家」。<br>安宁和平的游戏体验谁不向往呢？
+            </p>
+        </div>
+        <div class="box bRight">
+            <span class="slogan"><i
+                    style="display: block;font-size: 36pt;font-style: italic;">风驰电掣的</i>AMD
+                5900X<i
+                    style="display: block;font-size: 24pt">或许才是你的最佳拍档</i></span>
+            <p class="explain">为何我们如此在意服务器的性能？<br>因为你的流畅体验是我们的头等大事。<br>卡顿？不存在的。</p>
+        </div>
+    </div>
+    <div class="entrance w">
+        <div class="box">SO</div>
+        <div class="box bRight">加入我们吧</div>
+        <div>
+            <a class="box bRight btn_href" href="https://jq.qq.com/?_wv=1027&k=ldaE1OkJ"><i class="fab fa-qq fa-xs"></i>
+                Join
+                Us</a>
+        </div>
+    </div>
+    <div class="otherInformation w">
+        <p class="title">其它信息</p>
+        <p class="txt">详细的加入流程可以参考&thinsp;<a class="href" href="document/#jflc">进服流程</a>&thinsp;，若有问题可以随时问管理，有时间一定会回复你的。
+        </p>
+        <p class="txt">
+            偏原版插件服<i class="txtSmall">「所用插件及使用方法详见<a
+                    href="document/#jbzl"
+                    class="href">&thinsp;基本指令&thinsp;</a>」</i>。服内成员和谐♂友爱，大家都有求必应。
+        </p>
+        <p class="txt">
+            白名单制<i class="txtSmall">「长期不用的白名我服有权删除」</i>，进服仅需填个&thinsp;<a class="href" target="_blank"
+                href="https://docs.qq.com/form/page/DSmlUQ1hWU2R3RFpE">问卷</a>&thinsp;。但再次之前，请你先阅读本服的&thinsp;<a
+                href="document/#jbzl"
+                class="href">游戏规则</a>&thinsp;，我们有一些特殊的办法知道你是否认真阅读文档！只要你肯阅读，一定可以顺利进入我们的服务器。
+        </p>
+        <p class="txt">除特殊情况<i class="txtSmall">（例如经常在两个版本之间切换）</i>否则不给予两个白名。</p>
+        <p class="txt">
+            基岩版仅支持最新版本<i class="txtSmall">（我们提供对应安装包）</i>；<br>
+            JAVA&thinsp;版支持版本 1.16 - 1.19 。
+        </p>
+        <p class="txt">
+            我们不指定客户端，但提供原版的安装包。自行在客户端添加<i
+                class="txtBold">不含破坏游戏平衡性质</i>的模组我们是允许的。
+        </p>
+    </div>
+    <div class="AD w modules box">
+        <div class="announcement">
+            <p class="mTitle">
+                <i class="fa-solid fa-bullhorn fa-xs"></i> 公告
+            </p>
+            <div class="announcementBody"></div>
+        </div>
+        <div class="dividingLine"></div>
+        <div class="video">
+            <p>
+                <i class="fa-solid fa-film fa-fw"></i>来看看宣传片吧~
+            </p>
+            <div class="iframeVideo">
+                <iframe
+                    title="QuarkPixel 投稿的 Bilibili 宣传片"
+                    class="vII"
+                    src="//player.bilibili.com/player.html?aid=678666328&bvid=BV1NU4y1F7Ki&cid=499376943&page=1"
+                    scrolling="no"
+                    border="0"
+                    frameborder="no"
+                    framespacing="0"
+                    allowfullscreen="true"
+                    loading="lazy">
+                </iframe>
+            </div>
+            <div class="dotsDiv"></div>
+            <div class="arrowsDiv"></div>
+        </div>
+    </div>
+    <div class="w hrefDiv">
+        <nav class="relatedLinks hrefLink_ArrangementType">
+            <p>相关链接</p>
+            <div class="unCopy">
+                <a
+                    href="https://www.minecraft.net/"
+                    target="_blank">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAEZJREFUOI1jZGBg+M9AAWCiRDNVDGBBYjOiyaF7Dav8wHuBYgMYGXBHI6EwoZ0L0G1GByjqBz4QWfDIEeU1mkYjUYBiFwAAresJHbwor4gAAAAASUVORK5CYII="
+                        alt="Minecraft"
+                        style="image-rendering: pixelated;width: 76.8px;height: 76.8px;margin-top: 25.6px">
+                    <p class="instructions">我的世界官网</p>
+                </a>
+                <a
+                    href="https://www.xlhost.cn/"
+                    target="_blank"
+                    title="你最值得信任的云上主机商">糖
+                    <p class="instructions">糖糕云</p>
+                </a>
+                <a
+                    href="https://space.bilibili.com/377074719"
+                    target="_blank"
+                    title="本网站作者的Bilibili"><img
+                        src="/resources/QuarkPixel_LineAvatar.svg"
+                        alt="QuarkPixel"
+                        style="height: 83.2px;margin-top: 22.4px;">
+                    <p class="instructions">QuarkPixel</p>
+                </a>
+                <a href="https://www.mxxz.top/" target="_blank">M
+                    <p class="instructions">梦想小站</p>
+                </a>
+                <a
+                    href="https://afdian.net/@genesis_craft"
+                    target="_blank"
+                    title="去给我们充个电吧~"><img
+                        src="https://s2.loli.net/2022/07/18/Z1SkotcKuEPn5wJ.webp"
+                        alt="AFDian"
+                        style="height: 102.4px;margin-top: 12.8px;">
+                    <p class="instructions">爱发电主页</p>
+                </a>
+                <a
+                    href="https://jq.qq.com/?_wv=1027&k=ldaE1OkJ"
+                    target="_blank"
+                    title="快来和我们一起玩♂耍"><i class="fab fa-qq fa-xs"></i>
+                    <p class="instructions">加入QQ群</p>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <script src="data/galleryHref.js"></script>
+    <script src="data/main.js"></script>
+    <script src="index.js"></script>
+    <script src="preset.js"></script>
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>
